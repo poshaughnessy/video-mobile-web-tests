@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="{{ page.description }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,target-densitydpi=device-dpi, user-scalable=no, minimal-ui" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+  </head>
+  <body>
+    <video id="video" width="100%" height="100%" autoplay loop webkit-playsinline>
+      <source src="videos/paris-by-diego.mp4"/>
+      <source src="videos/paris-by-diego.webm"/>
+      <source src="videos/paris-by-diego.ogg"/>
+    </video>
+    <script type="text/javascript">
+      var videoEl = document.getElementById('video');
+      document.addEventListener('click', function() {
+        console.log('Play video');
+        video.play();
+      });
+    </script>
+  </body>
+</html>
